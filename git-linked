@@ -67,7 +67,7 @@ def main():
   args = sys.argv[1:]
   if args:
     git = subprocess.Popen(
-      ['git', '--no-pager', *args, '--color=always'],
+      ['git', '--no-pager', args[0], '--color=always', *args[1:]],
       stdout = subprocess.PIPE,
       text = True,
     )
