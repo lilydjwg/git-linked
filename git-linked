@@ -96,4 +96,10 @@ def main():
     pager.wait()
 
 if __name__ == '__main__':
+  try:
+    import setproctitle
+    setproctitle.setproctitle('git-linked')
+  except ImportError:
+    pass
+
   main()
