@@ -8,7 +8,7 @@ You'll need a terminal supporting hyperlinks. See [Hyperlinks in terminal emulat
 
 It requires Python 3 and pygit2 to run. And the default pager is `less`.
 
-For tmux, [a patch](https://github.com/tmux/tmux/issues/911) is needed. For less, if you set custom options (via `$LESS`), make sure `-r` (instead of `-R`) are included. If you use a custom `$PAGER`, make sure it supports hyperlinks.
+For less, if you set custom options (via `$LESS`), make sure `-r` (instead of `-R`) are included. If you use a custom `$PAGER`, make sure it supports hyperlinks.
 
 git commits are linked with the `fugitive://` scheme, GitHub links are appended as `(web)`, GitHub issues are linked.
 The `fugitive://` scheme is surposed to be used by the Vim plugin.
